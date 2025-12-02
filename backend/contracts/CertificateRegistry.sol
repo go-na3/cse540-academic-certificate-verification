@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
-import "./interfaces/ICertificateRegistry.sol";
+import "../interfaces/ICertificateRegistry.sol";
 
 /**
  * @title CertificateRegistry
