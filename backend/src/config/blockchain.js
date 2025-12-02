@@ -6,7 +6,7 @@ const { ethers } = require('ethers');
 const ETH_PROVIDER_URL = process.env.ETH_PROVIDER_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
-const CONTRACT_ABI_PATH = process.env.CONTRACT_ABI_PATH || path.resolve(__dirname, '../../../artifacts/CertificateRegistry.json');
+const CONTRACT_ABI_PATH = process.env.CONTRACT_ABI_PATH || path.resolve(__dirname, '../../artifacts/contracts/CertificateRegistry.sol/CertificateRegistry.json');
 
 let provider = null;
 let signer = null;

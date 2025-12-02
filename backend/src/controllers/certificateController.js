@@ -28,7 +28,7 @@ exports.getCertificatesByIssuer = async (req, res, next) => {
   try {
     const { issuer } = req.params;
     const list = await certificateService.certificatesOfIssuer(issuer);
-    res.json({ certificates: list });
+    res.json({ certificates: list.map((id) => id.toString()) });
   } catch (err) {
     next(err);
   }
@@ -38,7 +38,7 @@ exports.getCertificatesByRecipient = async (req, res, next) => {
   try {
     const { recipient } = req.params;
     const list = await certificateService.certificatesOfRecipient(recipient);
-    res.json({ certificates: list });
+    res.json({ certificates: list.map((id) => id.toString()) });
   } catch (err) {
     next(err);
   }
